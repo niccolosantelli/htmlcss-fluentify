@@ -104,13 +104,18 @@ header{
 
 h1{
   position:absolute;
-  top:30%
+  top:30%;
+  color:white;
+  font-size: 46px;
 }
 
 .titolo_meta a{
   position: absolute;
   top:50%;
-  background-color: green;
-  padding: 10px;
-  margin-top: -10px;
+  text-decoration:none;
+  background-color:#7ccb02;
+  border-radius: 5px;
+  padding: 25px 25px;
+  margin-top: 2px;
+  color: white;
 }
