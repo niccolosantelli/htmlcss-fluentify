@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
 header{
   background-color: #0C325A;
   width: 100%;
@@ -14,19 +18,21 @@ header{
   background-position: 120% 110%;
 }
 
-.sfondo_omini{
-
-
-}
 
 .container{
   width: 80%;
   margin: auto;
 }
 
+.container::after{
+  content:"";
+  display: table;
+  clear:both;
+}
+
 .navbar{
   height: 100px;
-  background-color: white;
+
   }
 
 .container .navbar{
@@ -38,21 +44,52 @@ header{
 }
 
 .logo{
-  width: 20%;
-  height: 100%;
-  background-color: red;
+  width: 15%;
+  }
+
+.fly{
+  position: relative;
+  top:11px;
 }
 
 .menu_g{
-  width:50%;
+  width:40%;
   height: 100%;
-  background-color: green;
+  line-height: 68px;
+  font-size: 12px
 }
 
+.menu_g a{
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+
 .menu_p{
-  width:30%;
+  width:45%;
   height: 100%;
-  background-color: yellow;
+  line-height: 68px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.menu_p a{
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu_p .bg{
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px 22px;
+}
+
+.menu_p .sp{
+  border-radius: 5px;
+  padding: 5px 12px;
+  background-color: #7ccb02
 }
 
 .titolo_meta {
@@ -70,7 +107,7 @@ h1{
   top:30%
 }
 
-a{
+.titolo_meta a{
   position: absolute;
   top:50%;
   background-color: green;
